@@ -1,0 +1,68 @@
+@import "../var.scss";
+
+.home{    
+    min-height: 100vh;
+    background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-position: center;    
+
+    .hero{
+        text-align: center;
+        width: 90%;
+        margin: auto;        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: calc(100vh - 95px);
+        min-height: 630px;
+        margin-top: 10px;
+        
+        .intro{
+            font-family: $barlow-con;
+            font-size: $fsm-normal;
+            
+            p{
+                &:first-child{
+                    letter-spacing: 2px;
+                    margin-top: 0;
+                    font-size: $fsm-medium;
+                }
+                &:last-child{
+                    line-height: 1.5;
+                }
+            }
+
+            h2{
+                font-size:$fsm-title-big;
+                margin: 0;
+                font-family: $bellefair;
+                color: #fff;
+                font-weight: lighter;
+            }
+        }
+
+        .explore{
+            margin: auto;
+            margin-top: 50px;
+            height: 180px;
+            width: 180px;
+            background: $white;
+            border-radius: 50%;
+            color: $grey;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $fsm-medium;
+            font-family: $bellefair;            
+        }
+    }
+
+
+
+
+
+
+
+}   
+

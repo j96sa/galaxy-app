@@ -1,0 +1,72 @@
+@import "../var.scss";
+
+.header{
+    padding-top: 50px;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 50px;
+        height: 50px;        
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+
+    hr{
+        display: inline-block;
+        width: 550px;        
+        height: .00001px;
+        border: .1px solid rgba($white,.1);
+        position: absolute;
+        left: -520px;
+        top: 35px;
+    }
+
+    .nav-bar{
+        position: relative;
+        padding:0 100px;
+        display: flex;
+        width: 45%;    
+        backdrop-filter: blur(160px) saturate(120%);
+        justify-content: space-around;
+        background: filter(5px);
+
+        nav{
+            padding: 35px 0;
+            
+            a{
+                text-decoration: none;  
+                font-family:$barlow-con;
+                letter-spacing: 2px;
+                font-size: 1rem;
+                color: rgba($white,.6);
+                span{
+                    font-weight: bolder;
+                    color: $white;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

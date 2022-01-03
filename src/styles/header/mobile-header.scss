@@ -1,0 +1,18 @@
+@import "../var.scss";
+
+
+.mh{
+    display: flex;    
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+
+    img{
+        height: 45px;
+        
+        &:last-child{
+            width: 28px;
+            height: 24px;
+        }
+    }        
+}

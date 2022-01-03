@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+/* COLORS */
+/* FONTS FAMILY */
+/* FONTS SIZE */
+.home {
+  min-height: 100vh;
+  background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home .hero {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: calc(100vh - 95px);
+  min-height: 630px;
+  margin-top: 10px;
+}
+
+.home .hero .intro {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.1rem;
+}
+
+.home .hero .intro p:first-child {
+  letter-spacing: 2px;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.home .hero .intro p:last-child {
+  line-height: 1.5;
+}
+
+.home .hero .intro h2 {
+  font-size: 4rem;
+  margin: 0;
+  font-family: "Bellefair", serif;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.home .hero .explore {
+  margin: auto;
+  margin-top: 50px;
+  height: 180px;
+  width: 180px;
+  background: #fff;
+  border-radius: 50%;
+  color: #555;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  font-family: "Bellefair", serif;
+}
+/*# sourceMappingURL=home.css.map */
