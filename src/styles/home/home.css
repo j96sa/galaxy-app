@@ -30,8 +30,8 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: calc(100vh - 95px);
-  min-height: 630px;
+  /* height: calc(100vh - 95px); */
+  /* min-height: 630px; */
   margin-top: 10px;
 }
 
