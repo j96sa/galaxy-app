@@ -10,11 +10,13 @@ body {
 /* COLORS */
 /* FONTS FAMILY */
 /* FONTS SIZE */
+/* PLACE HOLDER */
 .home {
   min-height: 100vh;
   background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .home .hero {
@@ -30,8 +32,6 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  /* height: calc(100vh - 95px); */
-  /* min-height: 630px; */
   margin-top: 10px;
 }
 

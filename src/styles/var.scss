@@ -7,11 +7,10 @@ body{
     color: #fff;
 }
 
-
 /* COLORS */
 $white:#fff;
 $grey:#555;
-
+$clr-white: 0 0% 100%;
 
 /* FONTS FAMILY */
 $bellefair:"Bellefair", serif;
@@ -22,3 +21,18 @@ $barlow-con:"Barlow Condensed",sans-serif;
 $fsm-normal:1.1rem;
 $fsm-title-big:4rem;
 $fsm-medium:1.4rem;
+
+
+/* PLACE HOLDER */
+%links-styles{
+    text-decoration: none;  
+    font-family:$barlow-con;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: rgba($white,.6);
+    span{
+        font-weight: bolder;
+        color: $white;
+        margin-right: 6px;
+    }
+}

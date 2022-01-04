@@ -13,6 +13,55 @@
         &:last-child{
             width: 28px;
             height: 24px;
+            position: relative;
+            z-index: 1000;
         }
     }        
+}
+
+.placeholder{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+
+    .nav-bar{        
+        display: flex;
+        flex-direction: column;        
+        width: 100%;
+        height: 100%;
+        background:rgba(#666, .1) ;
+        backdrop-filter: blur(1.8rem);
+        transform: translateX(100%);
+        transition: .35s ease-out;
+        position: relative;
+        z-index: 2000;
+        
+        //efect to transform the nav-bar
+        &.active{
+            transform: translateX(0);
+        }
+
+        img{
+            width: 28px;
+            align-self: flex-end;
+            padding: 33px 25px;
+        }
+    
+        .nav-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 230px;
+            margin-top: 20px;
+                
+            a{
+                @extend %links-styles;
+                padding-left: 30px;    
+            }            
+        }
+    
+    }
 }

@@ -28,9 +28,12 @@
         padding:0 100px;
         display: flex;
         width: 45%;    
-        backdrop-filter: blur(160px) saturate(120%);
         justify-content: space-around;
         background: filter(5px);
+        backdrop-filter: blur(160px) saturate(120%);
+
+        background:rgba(#666, .1) ;
+        backdrop-filter: blur(1.8rem);
 
         nav{
             padding: 35px 0;
