@@ -1,20 +1,21 @@
 @import "../var.scss";
 
+
 .home{    
     min-height: 100vh;
     background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
     background-size: cover;
-    background-position: center;  
-    overflow: hidden;
-
+    background-position: center;      
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-between;     
+    
     .hero{
         text-align: center;
-        width: 90%;
-        margin: auto;        
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;        
-        margin-top: 10px;
+        width: 90%;        
+        margin: 0 auto;               
+        margin-top: 10px;           
+        padding-bottom: 50px;           
         
         .intro{
             font-family: $barlow-con;
@@ -58,3 +59,29 @@
     }
 }   
 
+@media screen and (min-width:550px) {
+    .home{
+        background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");                
+    }
+}
+
+@media screen and (min-width:750px) {
+    .home{
+        background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");
+        .hero{
+            .intro{
+                font-size: $fst-normal;
+
+                p{
+                    &:first-child{
+                        font-size: $fst-medium;
+                    }                    
+                }
+
+                h2{
+                    font-size: $fst-title-big;
+                }
+            }
+        }
+    }
+}

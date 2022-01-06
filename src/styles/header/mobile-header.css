@@ -105,6 +105,10 @@ body {
   margin-top: 20px;
 }
 
+.placeholder .nav-bar .nav-links span.active {
+  color: #08f;
+}
+
 .placeholder .nav-bar .nav-links a {
   padding-left: 30px;
 }

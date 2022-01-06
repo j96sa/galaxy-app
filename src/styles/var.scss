@@ -4,12 +4,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: #fff;    
 }
 
 /* COLORS */
 $white:#fff;
 $grey:#555;
+$blue:#08f;
 $clr-white: 0 0% 100%;
 
 /* FONTS FAMILY */
@@ -21,6 +22,10 @@ $barlow-con:"Barlow Condensed",sans-serif;
 $fsm-normal:1.1rem;
 $fsm-title-big:4rem;
 $fsm-medium:1.4rem;
+
+$fst-normal:1.3rem;
+$fst-title-big:4.3rem;
+$fst-medium:1.7rem;
 
 
 /* PLACE HOLDER */

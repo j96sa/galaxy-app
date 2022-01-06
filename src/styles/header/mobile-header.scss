@@ -5,7 +5,7 @@
     display: flex;    
     justify-content: space-between;
     padding: 25px;
-    align-items: center;
+    align-items: center;    
 
     img{
         height: 45px;
@@ -56,6 +56,10 @@
             justify-content: space-around;
             height: 230px;
             margin-top: 20px;
+
+            span.active{
+                color: $blue;
+            }
                 
             a{
                 @extend %links-styles;

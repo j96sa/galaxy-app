@@ -7,12 +7,11 @@ body {
   color: #fff;
 }
 
-/* MIXINS */
 /* COLORS */
 /* FONTS FAMILY */
 /* FONTS SIZE */
+/* PLACE HOLDER */
 .header {
-  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,23 +32,24 @@ body {
 
 .header hr {
   display: inline-block;
-  width: 550px;
-  height: .00001px;
+  width: 53%;
+  height: .1px;
   border: 0.1px solid rgba(255, 255, 255, 0.1);
   position: absolute;
-  left: -520px;
+  left: -49%;
   top: 35px;
 }
 
 .header .nav-bar {
   position: relative;
-  padding: 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 45%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 55%;
+  padding: 0 35px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: filter(5px);
   -webkit-backdrop-filter: blur(160px) saturate(120%);
           backdrop-filter: blur(160px) saturate(120%);
@@ -60,6 +60,17 @@ body {
 
 .header .nav-bar nav {
   padding: 35px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+}
+
+.header .nav-bar nav.active {
+  border-bottom: 3px solid #08f;
+}
+
+.header .nav-bar nav.active span {
+  color: #08f;
 }
 
 .header .nav-bar nav a {
@@ -74,5 +85,17 @@ body {
   font-weight: bolder;
   color: #fff;
   margin-right: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 50px;
+  }
+  .header .nav-bar {
+    width: 45%;
+    padding: 0 100px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=header.css.map */

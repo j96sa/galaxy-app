@@ -1,7 +1,8 @@
 @import "../var.scss";
 
 .header{
-    padding-top: 50px;
+    //--
+    //padding-top: 50px;
     display: flex;    
     align-items: center;
     justify-content: space-between;
@@ -15,20 +16,27 @@
 
     hr{
         display: inline-block;
-        width: 550px;        
-        height: .00001px;
+        width: 53%;        
+        height: .1px;
         border: .1px solid rgba($white,.1);
         position: absolute;
-        left: -520px;
+        left: -49%;
         top: 35px;
     }
 
     .nav-bar{
-        position: relative;
-        padding:0 100px;
+        //---revisar el position relative ??que funcion cumple aqui??
+        position: relative;        
+        ///
+
         display: flex;
-        width: 45%;    
-        justify-content: space-around;
+        width: 55%;
+        padding: 0 35px;
+        //--
+        //width: 45%;    
+        //padding:0 100px;
+        //justify-content: space-around;
+        justify-content: space-between;
         background: filter(5px);
         backdrop-filter: blur(160px) saturate(120%);
 
@@ -37,7 +45,17 @@
 
         nav{
             padding: 35px 0;
-            
+            box-sizing: border-box;
+            border-bottom: 3px solid transparent;
+
+            //para controlar la seccion activa
+            &.active{
+                span{
+                    color: $blue;
+                }
+                border-bottom: 3px solid $blue;
+            }
+
             a{
                 text-decoration: none;  
                 font-family:$barlow-con;
@@ -49,27 +67,18 @@
                     color: $white;
                     margin-right: 6px;
                 }
-            }
+            }   
         }
     }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width:1200px) {
+    .header{
+        padding-top: 50px;
+        .nav-bar{
+            width: 45%;
+            padding: 0 100px;
+            justify-content: space-around;
+        }
+    }
 }

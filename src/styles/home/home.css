@@ -16,13 +16,6 @@ body {
   background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-}
-
-.home .hero {
-  text-align: center;
-  width: 90%;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,9 +23,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .hero {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 10px;
+  padding-bottom: 50px;
 }
 
 .home .hero .intro {
@@ -78,5 +79,26 @@ body {
           align-items: center;
   font-size: 1.4rem;
   font-family: "Bellefair", serif;
+}
+
+@media screen and (min-width: 550px) {
+  .home {
+    background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .home {
+    background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");
+  }
+  .home .hero .intro {
+    font-size: 1.3rem;
+  }
+  .home .hero .intro p:first-child {
+    font-size: 1.7rem;
+  }
+  .home .hero .intro h2 {
+    font-size: 4.3rem;
+  }
 }
 /*# sourceMappingURL=home.css.map */
