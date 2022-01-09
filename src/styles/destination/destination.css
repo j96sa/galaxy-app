@@ -58,6 +58,8 @@ body {
 .destination .content .nav-bar li {
   padding-bottom: 15px;
   border-bottom: 3px solid transparent;
+  position: relative;
+  z-index: 1000;
 }
 
 .destination .content .nav-bar li.active {
@@ -65,8 +67,6 @@ body {
 }
 
 .destination .content .nav-bar li.active a {
-  position: relative;
-  z-index: 1000;
   color: #08f;
 }
 
@@ -113,7 +113,7 @@ body {
   font-weight: lighter;
   display: block;
   font-family: "Barlow", sans-serif;
-  font-size: .9rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
 }
 /*# sourceMappingURL=destination.css.map */
