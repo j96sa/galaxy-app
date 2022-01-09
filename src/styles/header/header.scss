@@ -1,8 +1,6 @@
 @import "../var.scss";
 
-.header{
-    //--
-    //padding-top: 50px;
+.header{    
     display: flex;    
     align-items: center;
     justify-content: space-between;
@@ -14,39 +12,40 @@
         margin-left: 50px;
     }
 
-    hr{
-        display: inline-block;
-        width: 53%;        
-        height: .1px;
-        border: .1px solid rgba($white,.1);
-        position: absolute;
-        left: -49%;
-        top: 35px;
-    }
-
-    .nav-bar{
-        //---revisar el position relative ??que funcion cumple aqui??
-        position: relative;        
-        ///
-
+    
+    .nav-bar{        
+        position: relative;
         display: flex;
         width: 55%;
-        padding: 0 35px;
-        //--
-        //width: 45%;    
-        //padding:0 100px;
-        //justify-content: space-around;
-        justify-content: space-between;
-        background: filter(5px);
-        backdrop-filter: blur(160px) saturate(120%);
-
+        padding: 0 35px;        
+        justify-content: space-between;                
         background:rgba(#666, .1) ;
         backdrop-filter: blur(1.8rem);
+        
+        hr{
+            position: absolute;
+            left: -49%;
+            top: 35px;
+            display: inline-block;
+            width: 53%;        
+            height: .1px;
+            border: .1px solid rgba($white,.1);
+        }
 
         nav{
             padding: 35px 0;
             box-sizing: border-box;
             border-bottom: 3px solid transparent;
+
+            &:hover{
+                a{
+                    color: $white;
+                    span{
+                        color: $blue;                        
+                    }
+                }
+                border-bottom: 3px solid $blue;
+            }
 
             //para controlar la seccion activa
             &.active{
