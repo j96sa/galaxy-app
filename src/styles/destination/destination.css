@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+/* COLORS */
+/* FONTS FAMILY */
+/* FONTS SIZE */
+/* PLACE HOLDER */
+.destination {
+  background-image: url("../../assets/starter-code/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.destination .planet h2 {
+  font-size: 1rem;
+  font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4px;
+}
+
+.destination .planet h2 span {
+  color: #555;
+  margin-right: 10px;
+}
+
+.destination .planet img {
+  margin: 30px 0;
+  width: 95%;
+  max-width: 300px;
+}
+
+.destination .content {
+  width: 90%;
+  margin: auto;
+}
+
+.destination .content .nav-bar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.destination .content .nav-bar li {
+  padding-bottom: 15px;
+  border-bottom: 3px solid transparent;
+}
+
+.destination .content .nav-bar li.active {
+  border-bottom: 3px solid #08f;
+}
+
+.destination .content .nav-bar li.active a {
+  position: relative;
+  z-index: 1000;
+  color: #08f;
+}
+
+.destination .content .nav-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.destination .content h2 {
+  font-size: 4rem;
+  margin: 35px 0 0 0;
+  font-family: "Bellefair", serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.destination .content p.description {
+  font-family: "Barlow", sans-serif;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.destination .content p.description::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 40px 0;
+}
+
+.destination .content .distance {
+  padding-bottom: 25px;
+}
+
+.destination .content .distance p {
+  font-family: "Bellefair", serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.destination .content .distance p span {
+  font-weight: lighter;
+  display: block;
+  font-family: "Barlow", sans-serif;
+  font-size: .9rem;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=destination.css.map */

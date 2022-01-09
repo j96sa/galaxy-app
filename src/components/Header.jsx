@@ -13,11 +13,11 @@ export default function Header({width}) {
 
             <section className='nav-bar'>
                 {desktop && <hr />}
-                <nav className={location.pathname === "/" && "active"}>
-                    <Link to="">{desktop && <span>00 </span>}HOME</Link>
+                <nav className={location.pathname === "/" ?"active" :undefined}>
+                    <Link to="/">{desktop && <span>00 </span>}HOME</Link>
                 </nav>
-                <nav /* className={location.pathname === "/" && "active"} */>
-                    <Link to="">{desktop && <span>01 </span>}DESTINATION</Link>
+                <nav className={location.pathname === "/destination/moon" ?"active" :undefined}>
+                    <Link to="/destination/moon">{desktop && <span>01 </span>}DESTINATION</Link>
                 </nav>
                 <nav /* className={location.pathname === "/" && "active"} */>
                     <Link to="">{desktop && <span>02 </span>}CREW</Link>

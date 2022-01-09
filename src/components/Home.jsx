@@ -16,7 +16,7 @@ export default function Home() {
     }, [actNavBar]);
     
     return (
-        <div className={actNavBar ?"home block" :'home'} onClick={()=>actNavBar && setActNavBar(false)}>
+        <div className="home" onClick={()=>actNavBar && setActNavBar(false)}>
             {device < 750
                 ?<MobileHeader actNavBar={actNavBar} setActNavBar={setActNavBar}/>
                 :<Header width={device}/>
