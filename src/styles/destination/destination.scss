@@ -3,12 +3,11 @@
 .destination{    
     background-image: url("../../assets/starter-code/destination/background-destination-mobile.jpg");
     background-size: cover;
-    text-align: center;
-
+    
     .planet{        
+        text-align: center;
         h2{
-            font-size:$fsm-small;
-            font-size: 1rem;
+            font-size:$fsm-small;            
             font-family: $barlow-con;
             letter-spacing: 4px;
             span{
@@ -25,7 +24,9 @@
     }
 
     .content{
+        text-align: center;
         width: 90%;
+        max-width: 450px;
         margin: auto;
         .nav-bar{            
             list-style: none;
@@ -91,12 +92,145 @@
                     font-weight: lighter;
                     display: block;
                     font-family: $barlow;                    
-                    font-size: $fsm-x-samll;
+                    font-size: $fsm-x-small;
                     letter-spacing: 2px;
                 }
             }
             
             padding-bottom: 25px;
+        }
+
+    }
+}
+
+@media screen and (min-width:750px) {
+    .destination{
+        background-image: url("../../assets/starter-code/destination/background-destination-tablet.jpg");
+        .hero{
+            padding-top: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .planet{
+            h2{
+                text-align: left;
+                font-size: $fst-small;
+            }
+            img{
+                width: 50%;
+                max-width:420px;
+            }
+        } 
+
+        .content{
+            width: 85%;
+            max-width: none;
+
+            .nav-bar{
+                max-width: 350px;
+                font-size: $fst-small;
+            }
+
+            h2{
+                font-size: $fst-title-big;
+            }
+
+            .distance{
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                width: 65%;
+                min-width: 460px;
+                p{
+                    font-size: $fst-medium;     
+                    line-height: 2rem;               
+                    span{                        
+                        font-size: $fsm-x-small;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen  and (min-width:1200px){
+    .destination{
+        background-image: url("../../assets/starter-code/destination/background-destination-desktop.jpg");
+        min-height: 100vh;
+
+        .hero{
+            display: flex;
+            width: 85%;
+            padding-top: 60px;
+
+            .planet{
+                width: 50%;
+                h2{
+                    font-size: $fsd-medium;
+                    margin: 0;
+                }
+                
+                figure{
+                    text-align: left;
+                    
+                    img{                    
+                        margin-top: 80px;
+                        max-width: none;
+                        width: 75%;
+                    }
+                }
+            }
+
+            .content{
+                width: 42%;
+                text-align: left;
+                
+                .nav-bar{
+                    margin: 0;
+                    font-size: $fsd-normal;
+
+                    li{
+                        &:hover{
+                            border-bottom: 3px solid $blue;
+                            a{
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+
+                h2{
+                    font-size: 7rem;
+                }
+
+                p.description{
+                    font-size: $fsd-normal;
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background: rgba($white,.1);
+                        margin: 40px 0 10px 0;
+                    }                    
+                }
+
+                .distance{
+                    margin: 0;
+                    min-width: 360px;                    
+                    p{
+                        margin: 0;
+                        font-size: $fsd-medium;
+                        span{
+                            font-size: $fsm-x-small;
+                        }
+                    }
+                }
+
+            }
         }
 
     }

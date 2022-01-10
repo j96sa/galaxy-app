@@ -14,11 +14,13 @@ body {
 .destination {
   background-image: url("../../assets/starter-code/destination/background-destination-mobile.jpg");
   background-size: cover;
+}
+
+.destination .planet {
   text-align: center;
 }
 
 .destination .planet h2 {
-  font-size: 1rem;
   font-size: 1rem;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4px;
@@ -36,7 +38,9 @@ body {
 }
 
 .destination .content {
+  text-align: center;
   width: 90%;
+  max-width: 450px;
   margin: auto;
 }
 
@@ -115,5 +119,122 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 0.8rem;
   letter-spacing: 2px;
+}
+
+@media screen and (min-width: 750px) {
+  .destination {
+    background-image: url("../../assets/starter-code/destination/background-destination-tablet.jpg");
+  }
+  .destination .hero {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  .destination .planet h2 {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  .destination .planet img {
+    width: 50%;
+    max-width: 420px;
+  }
+  .destination .content {
+    width: 85%;
+    max-width: none;
+  }
+  .destination .content .nav-bar {
+    max-width: 350px;
+    font-size: 1.1rem;
+  }
+  .destination .content h2 {
+    font-size: 4.3rem;
+  }
+  .destination .content .distance {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    width: 65%;
+    min-width: 460px;
+  }
+  .destination .content .distance p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .destination .content .distance p span {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .destination {
+    background-image: url("../../assets/starter-code/destination/background-destination-desktop.jpg");
+    min-height: 100vh;
+  }
+  .destination .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+    padding-top: 60px;
+  }
+  .destination .hero .planet {
+    width: 50%;
+  }
+  .destination .hero .planet h2 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .destination .hero .planet figure {
+    text-align: left;
+  }
+  .destination .hero .planet figure img {
+    margin-top: 80px;
+    max-width: none;
+    width: 75%;
+  }
+  .destination .hero .content {
+    width: 42%;
+    text-align: left;
+  }
+  .destination .hero .content .nav-bar {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .destination .hero .content .nav-bar li:hover {
+    border-bottom: 3px solid #08f;
+  }
+  .destination .hero .content .nav-bar li:hover a {
+    color: #08f;
+  }
+  .destination .hero .content h2 {
+    font-size: 7rem;
+  }
+  .destination .hero .content p.description {
+    font-size: 1.3rem;
+  }
+  .destination .hero .content p.description::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0 10px 0;
+  }
+  .destination .hero .content .distance {
+    margin: 0;
+    min-width: 360px;
+  }
+  .destination .hero .content .distance p {
+    margin: 0;
+    font-size: 1.7rem;
+  }
+  .destination .hero .content .distance p span {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=destination.css.map */

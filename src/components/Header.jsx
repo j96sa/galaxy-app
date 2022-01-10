@@ -16,13 +16,13 @@ export default function Header({width}) {
                 <nav className={location.pathname === "/" ?"active" :undefined}>
                     <Link to="/">{desktop && <span>00 </span>}HOME</Link>
                 </nav>
-                <nav className={location.pathname === "/destination/moon" ?"active" :undefined}>
+                <nav className={location.pathname.includes("/destination") ?"active" :undefined}>
                     <Link to="/destination/moon">{desktop && <span>01 </span>}DESTINATION</Link>
                 </nav>
-                <nav /* className={location.pathname === "/" && "active"} */>
+                <nav className={location.pathname === "/crew" ?"active" :undefined}>
                     <Link to="">{desktop && <span>02 </span>}CREW</Link>
                 </nav>
-                <nav /* className={location.pathname === "/" && "active"} */>
+                <nav className={location.pathname === "/technology" ?"active" :undefined}>
                     <Link to="">{desktop && <span>03 </span>}TECHNOLOGY</Link>
                 </nav>
             </section>

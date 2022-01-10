@@ -23,7 +23,7 @@ export default function MobileHeader({setActNavBar,actNavBar}) {
                 <img onClick={()=>setActNavBar(false)} src={close} alt="close"/>
                 <section className="nav-links">
                     <Link to="/"><span className={(location.pathname === "/") ?"active" :undefined}>00 </span>HOME</Link>
-                    <Link to="/destination/moon"><span className={location.pathname === "/destination/moon" ?"active" :undefined}>01 </span>DESTINATION</Link>
+                    <Link to="/destination/moon"><span className={location.pathname.includes("/destination") ?"active" :undefined}>01 </span>DESTINATION</Link>
                     <Link to="/"><span>02 </span>CREW</Link>
                     <Link to="/"><span>03 </span>TECHNOLOGY</Link>
                 </section>
