@@ -39,6 +39,7 @@ $fst-medium:1.7rem;
 $fsd-normal:1.3rem;
 $fsd-title-big:8rem;
 $fsd-medium:1.7rem;
+$fsd-big:2.8rem;
 
 
 
@@ -64,5 +65,15 @@ $fsd-medium:1.7rem;
     span{
         color: $grey;
         margin-right: 10px;
+    }
+}
+
+@mixin h2-title ($fs){
+    font-size:$fs;            
+    font-family: $barlow-con;
+    letter-spacing: 4px;
+    span{
+        color: $grey;
+        margin-right:10px ;
     }
 }

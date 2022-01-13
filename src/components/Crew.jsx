@@ -43,7 +43,25 @@ export default function Crew({data,img}) {
 
     const Hero = ({data,img})=>{
         return(
-            <h2>DESKTOP-TABLET</h2>
+            <div className="hero">
+                <section className="content">
+                    <h2><span>02 </span> MEET YOUR CREW</h2>
+                    <p>{data.role}</p>
+                    <h2>{data.name}</h2>
+                    <p>{data.bio}</p>
+                    
+                    <section className='nav-bar'>
+                        <Link to="/crew/commander"><figure className={location === "/crew/commander" ?"active" :undefined}></figure></Link>
+                        <Link to="/crew/mission-specialist"><figure className={location === "/crew/mission-specialist" ?"active" :undefined}></figure></Link>
+                        <Link to="/crew/pilot"><figure className={location === "/crew/pilot" ?"active" :undefined}></figure></Link>
+                        <Link to="/crew/flight-engineer"><figure className={location === "/crew/flight-engineer" ?"active" :undefined}></figure></Link>
+                    </section>
+                </section> 
+
+                <section className="image">
+                    <img src={img} alt="img" />
+                </section>
+            </div>
         )
     };
 
