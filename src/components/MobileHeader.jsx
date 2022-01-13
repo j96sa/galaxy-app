@@ -24,8 +24,8 @@ export default function MobileHeader({setActNavBar,actNavBar}) {
                 <section className="nav-links">
                     <Link to="/"><span className={(location.pathname === "/") ?"active" :undefined}>00 </span>HOME</Link>
                     <Link to="/destination/moon"><span className={location.pathname.includes("/destination") ?"active" :undefined}>01 </span>DESTINATION</Link>
-                    <Link to="/"><span>02 </span>CREW</Link>
-                    <Link to="/"><span>03 </span>TECHNOLOGY</Link>
+                    <Link to="/crew/commander"><span className={location.pathname.includes("/crew") ?"active" :undefined}>02 </span>CREW</Link>
+                    <Link to="/technology"><span className={location.pathname.includes("/technology") ?"active" :undefined}>03 </span>TECHNOLOGY</Link>
                 </section>
             </div>
         </div>

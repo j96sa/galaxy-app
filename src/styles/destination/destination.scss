@@ -7,13 +7,7 @@
     .planet{        
         text-align: center;
         h2{
-            font-size:$fsm-small;            
-            font-family: $barlow-con;
-            letter-spacing: 4px;
-            span{
-                color: $grey;
-                margin-right: 10px;
-            }
+            @extend %h2-title-m
         }
         
         img{

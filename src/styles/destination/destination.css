@@ -11,15 +11,6 @@ body {
 /* FONTS FAMILY */
 /* FONTS SIZE */
 /* PLACE HOLDER */
-.destination {
-  background-image: url("../../assets/starter-code/destination/background-destination-mobile.jpg");
-  background-size: cover;
-}
-
-.destination .planet {
-  text-align: center;
-}
-
 .destination .planet h2 {
   font-size: 1rem;
   font-family: "Barlow Condensed", sans-serif;
@@ -29,6 +20,15 @@ body {
 .destination .planet h2 span {
   color: #555;
   margin-right: 10px;
+}
+
+.destination {
+  background-image: url("../../assets/starter-code/destination/background-destination-mobile.jpg");
+  background-size: cover;
+}
+
+.destination .planet {
+  text-align: center;
 }
 
 .destination .planet img {

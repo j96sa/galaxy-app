@@ -56,3 +56,13 @@ $fsd-medium:1.7rem;
         margin-right: 6px;
     }
 }
+
+%h2-title-m{
+    font-size:$fsm-small;            
+    font-family: $barlow-con;
+    letter-spacing: 4px;
+    span{
+        color: $grey;
+        margin-right: 10px;
+    }
+}
