@@ -45,10 +45,13 @@ export default function Crew({data,img}) {
         return(
             <div className="hero">
                 <section className="content">
-                    <h2><span>02 </span> MEET YOUR CREW</h2>
-                    <p>{data.role}</p>
-                    <h2>{data.name}</h2>
-                    <p>{data.bio}</p>
+                    <h2><span>02 </span> MEET YOUR CREW</h2>                    
+
+                    <article>
+                        <p>{data.role}</p>
+                        <h2>{data.name}</h2>
+                        <p>{data.bio}</p>
+                    </article>
                     
                     <section className='nav-bar'>
                         <Link to="/crew/commander"><figure className={location === "/crew/commander" ?"active" :undefined}></figure></Link>

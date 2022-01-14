@@ -112,7 +112,6 @@ body {
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    height: calc(100vh - 150px);
     padding-bottom: 0;
     margin-top: 0;
     display: flex;
@@ -129,6 +128,7 @@ body {
     padding-bottom: 170px;
     font-size: 1.5rem;
     text-align: left;
+    padding-top: 30px;
   }
   .home .hero .intro p:first-child {
     font-size: 2.3rem;
