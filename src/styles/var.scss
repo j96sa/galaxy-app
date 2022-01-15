@@ -68,6 +68,7 @@ $fsd-big:2.8rem;
     }
 }
 
+/* MIXIN */
 @mixin h2-title ($fs){
     font-size:$fs;            
     font-family: $barlow-con;
@@ -75,5 +76,24 @@ $fsd-big:2.8rem;
     span{
         color: $grey;
         margin-right:10px ;
+    }
+}
+
+@mixin home-planet-image($w,$fs,$l,$t) {    
+    width: $w;    
+    position: relative;
+    
+    img{
+        width: 100%;
+    }                 
+
+    a{        
+        text-decoration: none;
+        position: absolute;
+        left: $l;
+        top: $t;
+        font-size: $fs;
+        color: $white;
+        margin: 0;
     }
 }

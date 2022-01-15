@@ -11,6 +11,7 @@ body {
 /* FONTS FAMILY */
 /* FONTS SIZE */
 /* PLACE HOLDER */
+/* MIXIN */
 .home {
   min-height: 100vh;
   background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
@@ -33,7 +34,20 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-top: 10px;
-  padding-bottom: 50px;
+  /* changes */
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*  */
 }
 
 .home .hero .intro {
@@ -59,26 +73,26 @@ body {
   font-weight: lighter;
 }
 
-.home .hero .explore {
-  margin: auto;
-  margin-top: 50px;
-  height: 180px;
-  width: 180px;
-  background: #fff;
-  border-radius: 50%;
-  color: #555;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.home .hero .image {
+  width: 250px;
+  position: relative;
+  /* changes */
+  margin: 0 auto;
+  /*  */
+}
+
+.home .hero .image img {
+  width: 100%;
+}
+
+.home .hero .image a {
+  text-decoration: none;
+  position: absolute;
+  left: 35%;
+  top: 40%;
   font-size: 1.4rem;
-  font-family: "Bellefair", serif;
+  color: #fff;
+  margin: 0;
 }
 
 @media screen and (min-width: 550px) {
@@ -91,6 +105,12 @@ body {
   .home {
     background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");
   }
+  .home .hero {
+    margin-top: 40px;
+    /* changes */
+    max-width: 820px;
+    /*  */
+  }
   .home .hero .intro {
     font-size: 1.3rem;
   }
@@ -99,6 +119,22 @@ body {
   }
   .home .hero .intro h2 {
     font-size: 4.3rem;
+  }
+  .home .hero .image {
+    width: 300px;
+    position: relative;
+  }
+  .home .hero .image img {
+    width: 100%;
+  }
+  .home .hero .image a {
+    text-decoration: none;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0;
   }
 }
 
@@ -115,17 +151,26 @@ body {
     padding-bottom: 0;
     margin-top: 0;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 80%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* changes */
+    max-width: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /*  */
   }
   .home .hero .intro {
     width: 50%;
-    padding-bottom: 170px;
     font-size: 1.5rem;
     text-align: left;
     padding-top: 30px;
@@ -139,12 +184,25 @@ body {
   .home .hero .intro h2 {
     font-size: 8rem;
   }
-  .home .hero .planet {
-    padding-bottom: 170px;
+  .home .hero .image {
+    width: 400px;
+    position: relative;
   }
-  .home .hero .planet .explore {
-    height: 280px;
-    width: 280px;
+  .home .hero .image img {
+    width: 100%;
+  }
+  .home .hero .image a {
+    text-decoration: none;
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0;
+  }
+  .home .hero .image p:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=home.css.map */

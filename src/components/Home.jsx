@@ -3,6 +3,8 @@ import { useResize } from '../helpers/resizeFunction';
 import "../styles/home/home.css";
 import Header from './Header';
 import MobileHeader from './MobileHeader';
+import galaxy from "../assets/py.png";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     //state para controlar el menu de navegacion
@@ -26,12 +28,12 @@ export default function Home() {
                     <p>SO, YOU WANT TO TRAVEL TO</p>
                     <h2>SPACE</h2>
                     <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
-                </article>
-                <figure className='planet'>
-                    <div className="explore">
-                        <p>EXPLORE</p>
-                    </div>
-                </figure>                
+                </article>                                               
+
+                <section className="image">
+                    <img src={galaxy} alt="" />
+                    <Link to="/destination/moon">EXPLORE</Link>
+                </section>
             </div>
         </div>
     )
