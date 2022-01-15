@@ -3,7 +3,7 @@
 .crew{
     background-image: url("../../assets/starter-code/crew/background-crew-mobile.jpg");
     background-size: cover;    
-    //min-height: 100vh;
+    min-height: 100vh;
 
     .hero{
         width: 90%;
@@ -38,6 +38,7 @@
                     background-color: rgba($white, .2);
                     &.active{
                         background-color: $white;
+                        border: 3px solid $blue;
                     }
                     &:hover{
                         background-color: $white;
@@ -142,9 +143,8 @@
         .hero{
             display: flex;
             width: 80%;
-            text-align: left;            
-            margin-top: 80px;
-            margin-bottom: 20px;                       
+            text-align: left;
+            margin: 50px auto 0;                        
 
             .content{
                 padding-bottom: 25px;                
@@ -152,7 +152,8 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between; 
-                min-height: 670px;               
+                min-height: 670px;  
+                
 
                 h2:first-child{
                     @include h2-title($fsd-medium);
@@ -200,8 +201,7 @@
 
                 img{
                     align-self: flex-end;
-                    width: 75%;
-                    //max-height: 600px;
+                    width: 75%;                    
                     margin: 0 auto;
                     padding-bottom: 5px;
                 }                

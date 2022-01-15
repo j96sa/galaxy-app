@@ -70,10 +70,8 @@
         background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");
         .hero{
             margin-top: 40px;
-            
-            /* changes */
             max-width:820px ;
-            /*  */
+            
 
             .intro{
                 font-size: $fst-normal;
@@ -109,12 +107,9 @@
             justify-content: space-between;
             width: 80%; 
             flex-grow: 1;           
-            align-items: center;
-
-            /* changes */
+            align-items: center;            
             max-width: none;
-            flex-direction: row;
-            /*  */
+            flex-direction: row;            
 
             .intro{                
                 width: 50%;                
@@ -140,7 +135,7 @@
             .image{
                 @include home-planet-image(400px,$fsd-medium,42%,42%);
 
-                p:hover{
+                a:hover{
                     color: rgba($white, .5);
                     cursor: pointer;
                 }

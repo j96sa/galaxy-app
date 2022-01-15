@@ -22,9 +22,11 @@ body {
   margin-right: 10px;
 }
 
+/* MIXIN */
 .crew {
   background-image: url("../../assets/starter-code/crew/background-crew-mobile.jpg");
   background-size: cover;
+  min-height: 100vh;
 }
 
 .crew .hero {
@@ -68,6 +70,7 @@ body {
 
 .crew .hero .nav-bar a figure.active {
   background-color: #fff;
+  border: 3px solid #08f;
 }
 
 .crew .hero .nav-bar a figure:hover {
@@ -170,8 +173,7 @@ body {
     display: flex;
     width: 80%;
     text-align: left;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 50px auto 0;
   }
   .crew .hero .content {
     padding-bottom: 25px;

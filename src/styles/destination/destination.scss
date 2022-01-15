@@ -3,6 +3,13 @@
 .destination{    
     background-image: url("../../assets/starter-code/destination/background-destination-mobile.jpg");
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .hero{
+        flex-grow: 1;
+    }
     
     .planet{        
         text-align: center;
@@ -104,6 +111,9 @@
             padding-top: 20px;
             width: 90%;
             margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
         }
 
         .planet{
@@ -119,7 +129,9 @@
 
         .content{
             width: 85%;
-            max-width: none;
+            max-width: none;            
+            margin: 0 auto;
+            
 
             .nav-bar{
                 max-width: 350px;
@@ -152,13 +164,13 @@
 
 @media screen  and (min-width:1200px){
     .destination{
-        background-image: url("../../assets/starter-code/destination/background-destination-desktop.jpg");
-        min-height: 100vh;
+        background-image: url("../../assets/starter-code/destination/background-destination-desktop.jpg");               
 
-        .hero{
-            display: flex;
+        .hero{            
+            flex-direction: row;
             width: 85%;
             padding-top: 60px;
+            align-items: center;
 
             .planet{
                 width: 50%;
