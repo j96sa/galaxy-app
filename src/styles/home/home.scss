@@ -14,16 +14,12 @@
         text-align: center;
         width: 90%;        
         margin: 0 auto;               
-        margin-top: 10px; 
-        
-        
-        /* changes */
+        margin-top: 10px;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        /*  */
-
+        
         .intro{
             font-family: $barlow-con;
             font-size: $fsm-normal;
@@ -50,11 +46,8 @@
 
         .image{
             @include home-planet-image(250px,$fsm-medium,35%,40%);
-            
-            /* changes */
-            //margin: auto;            
             margin:0 auto;
-            /*  */
+            
         }
     }
 }   

@@ -23,7 +23,7 @@ export default function Header({width}) {
                     <Link to="/crew/commander">{desktop && <span>02 </span>}CREW</Link>
                 </nav>
                 <nav className={location.pathname.includes("/technology") ?"active" :undefined}>
-                    <Link to="/technology">{desktop && <span>03 </span>}TECHNOLOGY</Link>
+                    <Link to="/technology/launch-vehicle">{desktop && <span>03 </span>}TECHNOLOGY</Link>
                 </nav>
             </section>
         </div>

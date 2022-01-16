@@ -1,0 +1,200 @@
+@import "../var.scss";
+
+.technology{
+    background-image: url("../../assets/starter-code/technology/background-technology-mobile.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .hero{
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            min-height: 650px;
+            justify-content: space-around;
+        }
+
+        .page_title{
+            margin-bottom: 20px;
+            h2{
+                @include h2-title($fsm-small)                
+            }
+        }
+
+        figure.image-mobile{            
+            margin: 0;            
+            img{
+                width: 100%;
+            }
+        }
+
+        .main_content{
+            width: 90%;
+            max-width: 560px;
+            margin: auto;
+            margin-top: 50px;
+
+            .nav-bar{
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+                max-width: 185px;
+                min-width: 160px;
+                margin: auto;
+                margin-bottom: 40px;
+                position: relative;
+                z-index: 1000;
+
+                a{
+                    text-decoration: none;
+                    color: $light-yellow;
+                    font-family: $bellefair;
+                }
+                span{
+                    border-radius: 50%;
+                    padding: 10px 17px;
+                    border: 1px solid $white;
+
+                    &.active{
+                        background: $white;
+                        color: #000;
+                    }
+                }
+            }
+
+            p:first-child{
+                font-family: $barlow-con;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                font-size: $fsm-small;
+            }
+
+            h1{                
+                margin-top: 0;
+                font-size: $fst-medium;
+                color: $light-yellow;
+                font-family: $bellefair;
+                font-weight: lighter;
+                text-transform: uppercase;
+            }
+
+            p:last-child{
+                font-family: $barlow;
+                font-size: $fsm-small;
+                line-height: 1.5;
+            }
+        }
+
+        figure.image-desktop{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width:750px) {
+    .technology{
+        .hero{
+            width: 95%;
+            margin: auto;
+            .page_title{
+                text-align: left;
+                h2{
+                    font-size: $fst-normal;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .technology{
+        .hero{
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-end;
+            margin-top: 40px;
+
+            figure.image-mobile{
+                display: none;
+            } 
+
+            figure.image-desktop{
+                margin: 0;
+                display:block;
+                margin: auto 0;
+                width: 70%;
+                //max-width: 670px;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .content{
+                padding-left: 70px;
+                //max-width: 900px;
+            }            
+
+            .page_title{
+                h2{
+                    font-size: $fsd-medium;
+                }
+            }
+
+            .main_content{
+                display: flex;
+                max-width: none;
+                margin: 50px 0 auto 0;
+                text-align: left;                
+                
+                .nav-bar{
+                    flex-direction: column;
+                    height: 80%;
+                    margin: auto;
+                    min-width: fit-content;
+                    width: fit-content;
+                    margin-right: 60px;
+
+                    span{
+                        padding: 13px 23px;
+                        font-size: $fsd-normal;
+                        &:hover{
+                            background: $white;
+                            color: #000;
+                        }
+                    }
+                }
+
+                article{
+                    p:first-child{
+                        font-size: $fsd-normal;
+                    }
+                    h1{
+                        font-size: $fsm-title-big;
+                        margin-bottom: 0;
+                    }
+                    p:last-child{
+                        font-size: $fst-small;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@
     .planet{        
         text-align: center;
         h2{
-            @extend %h2-title-m
+            @include h2-title($fsm-small)
         }
         
         img{
@@ -117,8 +117,7 @@
         }
 
         .planet{
-            h2{
-                text-align: left;
+            h2{                
                 font-size: $fst-small;
             }
             img{
@@ -176,6 +175,7 @@
                 width: 50%;
                 h2{
                     font-size: $fsd-medium;
+                    text-align: left;
                     margin: 0;
                 }
                 

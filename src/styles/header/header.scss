@@ -56,16 +56,7 @@
             }
 
             a{
-                text-decoration: none;  
-                font-family:$barlow-con;
-                letter-spacing: 2px;
-                font-size: 1rem;
-                color: rgba($white,.6);
-                span{
-                    font-weight: bolder;
-                    color: $white;
-                    margin-right: 6px;
-                }
+                @extend %links-styles;
             }   
         }
     }

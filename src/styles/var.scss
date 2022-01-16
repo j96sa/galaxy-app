@@ -11,6 +11,7 @@ body{
 $white:#fff;
 $grey:#555;
 $blue:#08f;
+$light-yellow:#feb;
 $clr-white: 0 0% 100%;
 
 
@@ -58,15 +59,8 @@ $fsd-big:2.8rem;
     }
 }
 
-%h2-title-m{
-    font-size:$fsm-small;            
-    font-family: $barlow-con;
-    letter-spacing: 4px;
-    span{
-        color: $grey;
-        margin-right: 10px;
-    }
-}
+
+
 
 /* MIXIN */
 @mixin h2-title ($fs){

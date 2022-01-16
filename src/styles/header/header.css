@@ -11,6 +11,21 @@ body {
 /* FONTS FAMILY */
 /* FONTS SIZE */
 /* PLACE HOLDER */
+.header .nav-bar nav a {
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header .nav-bar nav a span {
+  font-weight: bolder;
+  color: #fff;
+  margin-right: 6px;
+}
+
+/* MIXIN */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,20 +95,6 @@ body {
 
 .header .nav-bar nav.active span {
   color: #08f;
-}
-
-.header .nav-bar nav a {
-  text-decoration: none;
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.header .nav-bar nav a span {
-  font-weight: bolder;
-  color: #fff;
-  margin-right: 6px;
 }
 
 @media screen and (min-width: 1200px) {

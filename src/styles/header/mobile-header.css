@@ -25,6 +25,7 @@ body {
   margin-right: 6px;
 }
 
+/* MIXIN */
 .mh {
   display: -webkit-box;
   display: -ms-flexbox;
