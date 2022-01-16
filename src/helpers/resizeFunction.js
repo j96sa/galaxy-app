@@ -8,7 +8,7 @@ const windowWidth = ()=>{
 export const useResize = ()=>{    
     const [device, setDevice] = useState(windowWidth());
     
-    useEffect(() => {
+    useLayoutEffect(() => {
         const resizeWindow = () =>{            
             /* if(windowWidth() < 750){
                 setDevice("mobile")
