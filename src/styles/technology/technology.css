@@ -148,6 +148,9 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+  .technology {
+    background-image: url("../../assets/starter-code/technology/background-technology-tablet.jpg");
+  }
   .technology .hero {
     width: 95%;
     margin: auto;
@@ -161,6 +164,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .technology {
+    background-image: url("../../assets/starter-code/technology/background-technology-desktop.jpg");
+  }
   .technology .hero {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
