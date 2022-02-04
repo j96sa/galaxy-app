@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/galaxy-app/static/css/main.314d9f62.css",
+    "main.css": "/galaxy-app/static/css/main.33895168.css",
     "main.js": "/galaxy-app/static/js/main.68cb3108.js",
     "static/media/py.png": "/galaxy-app/static/media/py.ad7948fec6a04510dc6f.png",
     "static/media/background-home-desktop.jpg": "/galaxy-app/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
@@ -14,6 +14,7 @@
     "static/media/background-crew-desktop.jpg": "/galaxy-app/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
     "static/media/image-mark-shuttleworth.webp": "/galaxy-app/static/media/image-mark-shuttleworth.665e198adc22fcdf7810.webp",
     "static/media/background-destination-tablet.jpg": "/galaxy-app/static/media/background-destination-tablet.8f55d346d8b6cfd95ab7.jpg",
+    "static/media/background-technology-desktop.jpg": "/galaxy-app/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
     "static/media/image-europa.webp": "/galaxy-app/static/media/image-europa.c3be32383f31d0f76d96.webp",
     "static/media/image-moon.webp": "/galaxy-app/static/media/image-moon.b5a3c90e9c8eeb2cb68d.webp",
     "static/media/background-crew-tablet.jpg": "/galaxy-app/static/media/background-crew-tablet.16d51cf61e98ce45eb61.jpg",
@@ -21,6 +22,7 @@
     "static/media/image-space-capsule-landscape.jpg": "/galaxy-app/static/media/image-space-capsule-landscape.d672da81d5ff3ada7301.jpg",
     "static/media/image-launch-vehicle-portrait.jpg": "/galaxy-app/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
     "static/media/background-home-mobile.jpg": "/galaxy-app/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/background-technology-tablet.jpg": "/galaxy-app/static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
     "static/media/image-launch-vehicle-landscape.jpg": "/galaxy-app/static/media/image-launch-vehicle-landscape.4281a59ff7186488fe6a.jpg",
     "static/media/image-mars.webp": "/galaxy-app/static/media/image-mars.7f55f721b4a64b7a56a8.webp",
     "static/media/background-destination-mobile.jpg": "/galaxy-app/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
@@ -29,11 +31,11 @@
     "static/media/logo.svg": "/galaxy-app/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/galaxy-app/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/galaxy-app/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.314d9f62.css.map": "/galaxy-app/static/css/main.314d9f62.css.map",
+    "main.33895168.css.map": "/galaxy-app/static/css/main.33895168.css.map",
     "main.68cb3108.js.map": "/galaxy-app/static/js/main.68cb3108.js.map"
   },
   "entrypoints": [
-    "static/css/main.314d9f62.css",
+    "static/css/main.33895168.css",
     "static/js/main.68cb3108.js"
   ]
 }
