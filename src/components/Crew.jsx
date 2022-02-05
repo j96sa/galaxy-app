@@ -16,12 +16,9 @@ export default function Crew({data,img}) {
     /* PARA BLOQUEAR EL SCROLL CUANDO EL MENU ESTE DESPLEGADO */    
     useEffect(() => {
         actNavBar ?document.body.style.overflow = "hidden" :document.body.style.overflow = "auto";
-    }, [actNavBar]);
-    
-    //console.log(data);
+    }, [actNavBar]);    
 
-    const HeroMobile = ({data,img})=>{
-        /* console.log(data,img); */
+    const HeroMobile = ({data,img})=>{        
         return(
             <div className='hero'>
                 <h2><span>02 </span> MEET YOUR CREW</h2>

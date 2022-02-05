@@ -20,7 +20,7 @@ export default function Technology({isd,ism,data}) {
 
 
     return (
-        <div className='technology'> 
+        <div className='technology' onClick={()=>actNavBar && setActNavBar(false)}> 
             {device < 750
                 ?<MobileHeader actNavBar={actNavBar} setActNavBar={setActNavBar}/>
                 :<Header width={device}/>
