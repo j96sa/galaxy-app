@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/galaxy-app/static/css/main.33895168.css",
-    "main.js": "/galaxy-app/static/js/main.68cb3108.js",
+    "main.js": "/galaxy-app/static/js/main.d426cbbe.js",
     "static/media/py.png": "/galaxy-app/static/media/py.ad7948fec6a04510dc6f.png",
     "static/media/background-home-desktop.jpg": "/galaxy-app/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/galaxy-app/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
@@ -32,10 +32,10 @@
     "static/media/icon-close.svg": "/galaxy-app/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/galaxy-app/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
     "main.33895168.css.map": "/galaxy-app/static/css/main.33895168.css.map",
-    "main.68cb3108.js.map": "/galaxy-app/static/js/main.68cb3108.js.map"
+    "main.d426cbbe.js.map": "/galaxy-app/static/js/main.d426cbbe.js.map"
   },
   "entrypoints": [
     "static/css/main.33895168.css",
-    "static/js/main.68cb3108.js"
+    "static/js/main.d426cbbe.js"
   ]
 }
