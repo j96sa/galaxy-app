@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/header/mobile-header.css"
+import "../styles/styles.css";
 import logo from "../assets/starter-code/shared/logo.svg";
 import hamburguesa from "../assets/starter-code/shared/icon-hamburger.svg";
 import close from "../assets/starter-code/shared/icon-close.svg";

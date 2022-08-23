@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import "../styles/header/header.css"
+import "../styles/styles.css";
 
 export default function Header({width}) {
     const desktop = width>1200;
