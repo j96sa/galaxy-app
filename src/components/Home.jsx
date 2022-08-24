@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useResize } from '../helpers/resizeFunction';
-import "../styles/home/home.css";
+import "../styles/styles.css";
 import Header from './Header';
 import MobileHeader from './MobileHeader';
 import galaxy from "../assets/py.png";

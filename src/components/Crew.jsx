@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { useResize } from '../helpers/resizeFunction';
-import "../styles/crew/crew.css";
+import "../styles/styles.css";
 import Header from './Header';
 import MobileHeader from './MobileHeader';
 

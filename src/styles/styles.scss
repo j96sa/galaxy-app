@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;    
+}
+
+
+//VAR
+@import "./_var";
+
+//COMPONENTS
+@import "./_home";
+@import "./_mobile-header";
+@import "./_header";
+@import "./_destination";
+@import "./_technology";
+@import "./_crew";

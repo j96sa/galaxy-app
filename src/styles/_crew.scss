@@ -1,7 +1,5 @@
-@import "../var.scss";
-
 .crew{
-    background-image: url("../../assets/starter-code/crew/background-crew-mobile.jpg");
+    background-image: url("../assets/starter-code/crew/background-crew-mobile.jpg");
     background-size: cover;    
     min-height: 100vh;
 
@@ -12,7 +10,7 @@
         text-align: center;
 
         &>h2{            
-            @extend %h2-title-m;            
+            //@extend %h2-title-m;            
             margin-bottom: 40px;
         }
 
@@ -79,7 +77,7 @@
 
 @media screen and(min-width:750px) {
     .crew{
-        background-image: url("../../assets/starter-code/crew/background-crew-tablet.jpg");
+        background-image: url("../assets/starter-code/crew/background-crew-tablet.jpg");
 
         /* changes */
         display: flex;
@@ -146,7 +144,7 @@
 
 @media screen and (min-width:1200px) {
     .crew{
-        background-image: url("../../assets/starter-code/crew/background-crew-desktop.jpg");
+        background-image: url("../assets/starter-code/crew/background-crew-desktop.jpg");
         min-height: 100vh;
         display: flex;
         flex-direction: column;

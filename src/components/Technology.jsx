@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useResize } from '../helpers/resizeFunction';
 import Header from './Header';
 import MobileHeader from './MobileHeader';
-import "../styles/technology/technology.css";
+import "../styles/styles.css";
 
 
 export default function Technology({isd,ism,data}) {

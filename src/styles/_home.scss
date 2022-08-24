@@ -1,9 +1,6 @@
-@import "../var.scss";
-
-
 .home{    
     min-height: 100vh;
-    background-image: url("../../assets/starter-code/home/background-home-mobile.jpg");
+    background-image: url("../assets/starter-code/home/background-home-mobile.jpg");
     background-size: cover;
     background-position: center;      
     display: flex;   
@@ -54,13 +51,13 @@
 
 @media screen and (min-width:550px) {
     .home{
-        background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");                
+        background-image: url("../assets/starter-code/home/background-home-tablet.jpg");                
     }
 }
 
 @media screen and (min-width:750px) {
     .home{
-        background-image: url("../../assets/starter-code/home/background-home-tablet.jpg");
+        background-image: url("../assets/starter-code/home/background-home-tablet.jpg");
         .hero{
             margin-top: 40px;
             max-width:820px ;
@@ -90,7 +87,7 @@
 
 @media screen and (min-width:1200px){
     .home{   
-        background-image: url("../../assets/starter-code/home/background-home-desktop.jpg");     
+        background-image: url("../assets/starter-code/home/background-home-desktop.jpg");     
         .hero{            
             display: flex;
             align-self: center;            

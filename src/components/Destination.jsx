@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MobileHeader from './MobileHeader'
-import "../styles/destination/destination.css"
+import "../styles/styles.css";
 import { useResize } from '../helpers/resizeFunction';
 import { Link, useLocation } from 'react-router-dom';
 import Header from './Header';
